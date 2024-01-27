@@ -13,6 +13,12 @@
 		8C591D222B64D4DC0090645C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C591D202B64D4DC0090645C /* Main.storyboard */; };
 		8C591D242B64D4DD0090645C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C591D232B64D4DD0090645C /* Assets.xcassets */; };
 		8C591D272B64D4DD0090645C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C591D252B64D4DD0090645C /* LaunchScreen.storyboard */; };
+		8C591D312B64D6BE0090645C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C591D302B64D6BE0090645C /* Fonts.swift */; };
+		8C591D332B64D6F40090645C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C591D322B64D6F40090645C /* Colors.xcassets */; };
+		8C591D352B64D7080090645C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C591D342B64D7080090645C /* Colors.swift */; };
+		8C591D382B64D9840090645C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C591D372B64D9840090645C /* SnapKit */; };
+		8C591D3A2B64D9840090645C /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8C591D392B64D9840090645C /* SnapKit-Dynamic */; };
+		8C591D3C2B64DFED0090645C /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C591D3B2B64DFED0090645C /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		8C591D232B64D4DD0090645C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C591D262B64D4DD0090645C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C591D282B64D4DD0090645C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C591D302B64D6BE0090645C /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8C591D322B64D6F40090645C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8C591D342B64D7080090645C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8C591D3B2B64DFED0090645C /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C591D382B64D9840090645C /* SnapKit in Frameworks */,
+				8C591D3A2B64D9840090645C /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,35 @@
 		8C591D192B64D4DC0090645C /* SESACShopping - ver.SnapKit */ = {
 			isa = PBXGroup;
 			children = (
-				8C591D1A2B64D4DC0090645C /* AppDelegate.swift */,
-				8C591D1C2B64D4DC0090645C /* SceneDelegate.swift */,
+				8C591D2F2B64D6AF0090645C /* DesignSource */,
+				8C591D2E2B64D4E60090645C /* Delegates */,
 				8C591D1E2B64D4DC0090645C /* ViewController.swift */,
+				8C591D3B2B64DFED0090645C /* SearchTableViewCell.swift */,
 				8C591D202B64D4DC0090645C /* Main.storyboard */,
 				8C591D232B64D4DD0090645C /* Assets.xcassets */,
 				8C591D252B64D4DD0090645C /* LaunchScreen.storyboard */,
 				8C591D282B64D4DD0090645C /* Info.plist */,
 			);
 			path = "SESACShopping - ver.SnapKit";
+			sourceTree = "<group>";
+		};
+		8C591D2E2B64D4E60090645C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8C591D1A2B64D4DC0090645C /* AppDelegate.swift */,
+				8C591D1C2B64D4DC0090645C /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		8C591D2F2B64D6AF0090645C /* DesignSource */ = {
+			isa = PBXGroup;
+			children = (
+				8C591D302B64D6BE0090645C /* Fonts.swift */,
+				8C591D322B64D6F40090645C /* Colors.xcassets */,
+				8C591D342B64D7080090645C /* Colors.swift */,
+			);
+			path = DesignSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,10 @@
 			dependencies = (
 			);
 			name = "SESACShopping - ver.SnapKit";
+			packageProductDependencies = (
+				8C591D372B64D9840090645C /* SnapKit */,
+				8C591D392B64D9840090645C /* SnapKit-Dynamic */,
+			);
 			productName = "SESACShopping - ver.SnapKit";
 			productReference = 8C591D172B64D4DC0090645C /* SESACShopping - ver.SnapKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 8C591D0E2B64D4DC0090645C;
+			packageReferences = (
+				8C591D362B64D9840090645C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 8C591D182B64D4DC0090645C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C591D272B64D4DD0090645C /* LaunchScreen.storyboard in Resources */,
+				8C591D332B64D6F40090645C /* Colors.xcassets in Resources */,
 				8C591D242B64D4DD0090645C /* Assets.xcassets in Resources */,
 				8C591D222B64D4DC0090645C /* Main.storyboard in Resources */,
 			);
@@ -138,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C591D312B64D6BE0090645C /* Fonts.swift in Sources */,
+				8C591D352B64D7080090645C /* Colors.swift in Sources */,
 				8C591D1F2B64D4DC0090645C /* ViewController.swift in Sources */,
+				8C591D3C2B64DFED0090645C /* SearchTableViewCell.swift in Sources */,
 				8C591D1B2B64D4DC0090645C /* AppDelegate.swift in Sources */,
 				8C591D1D2B64D4DC0090645C /* SceneDelegate.swift in Sources */,
 			);
@@ -307,9 +350,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seryunchun.SESACShopping---ver-SnapKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,9 +382,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seryunchun.SESACShopping---ver-SnapKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +414,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C591D362B64D9840090645C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C591D372B64D9840090645C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C591D362B64D9840090645C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		8C591D392B64D9840090645C /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C591D362B64D9840090645C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C591D0F2B64D4DC0090645C /* Project object */;
 }
