@@ -43,7 +43,7 @@ class OnboardingViewController: UIViewController {
         render()
     }
     
-    // MARK: -
+    // MARK: - UI Configuration Method
     
     func render() {
         view.addSubview(logo)

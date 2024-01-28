@@ -11,6 +11,8 @@ class SearchDetailCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "SearchDetailCollectionViewCell"
     
+     // MARK: - UI Properties
+    
     let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = Colors.pointGreen
@@ -50,6 +52,8 @@ class SearchDetailCollectionViewCell: UICollectionViewCell {
         label.font = .boldSystemFont(ofSize: 18)
         return label
     }()
+    
+     // MARK: - UI Configuration Methods
     
     func configure() {
 //        imageView.image = .profile10
