@@ -11,12 +11,37 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let scene = (scene as? UIWindowScene) else { return }
+        
+//        window?.rootViewController = OnboardingViewController()
+        
+         // MARK: - Tab Bar Controller
+        
+        let tabBarViewController = UITabBarController()
+        
+        let vc0 = OnboardingViewController()
+        let vc1 = UINavigationController(rootViewController: SearchTableViewController())
+        let vc2 = SearchDetailCollectionViewController()
+        
+        vc0.title = "온보딩"
+        vc0.tabBarItem.image = Images.heartFill
+        
+        vc1.title = "검색"
+        vc1.tabBarItem.image = Images.search
+        
+        vc2.title = "검색 결과"
+        vc2.tabBarItem.image = Images.heart
+        
+        tabBarViewController.setViewControllers([vc0, vc1, vc2], animated: false)
+        tabBarViewController.modalPresentationStyle = .fullScreen
+        tabBarViewController.tabBar.backgroundColor = .systemBackground
+        tabBarViewController.tabBar.tintColor = Colors.pointGreen
+        
+        window?.rootViewController = tabBarViewController
+        window?.makeKeyAndVisible()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

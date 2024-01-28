@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class SearchTableViewController: UIViewController {
     
     let dataList: [String] = [
         "맥북 거치대",
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
 
  // MARK: - UITableView Delegate
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension SearchTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataList.count
     }
@@ -113,7 +113,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
  // MARK: - UITableView Configuration Method
 
-extension ViewController {
+extension SearchTableViewController {
     func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
