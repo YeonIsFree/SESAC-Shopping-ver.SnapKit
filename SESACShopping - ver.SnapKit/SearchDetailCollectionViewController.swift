@@ -19,55 +19,27 @@ class SearchDetailCollectionViewController: UIViewController {
         return label
     }()
     
-    let relevantButton: UIButton = {
-        let button = UIButton()
+    let relevantButton: SortingButton = {
+        let button = SortingButton()
         button.setTitle("정확도", for: .normal)
-        button.backgroundColor = .white
-        button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.clipsToBounds = true
-        button.layer.cornerRadius = 10
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.white.cgColor
         return button
     }()
     
-    let dateButton: UIButton = {
-        let button = UIButton()
+    let dateButton: SortingButton = {
+       let button = SortingButton()
         button.setTitle("날짜순", for: .normal)
-        button.backgroundColor = .clear
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.clipsToBounds = true
-        button.layer.cornerRadius = 10
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.white.cgColor
         return button
     }()
     
-    let descButton: UIButton = {
-        let button = UIButton()
+    let descButton: SortingButton = {
+       let button = SortingButton()
         button.setTitle("가격높은순", for: .normal)
-        button.backgroundColor = .clear
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.clipsToBounds = true
-        button.layer.cornerRadius = 10
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.white.cgColor
         return button
     }()
     
-    let ascButton: UIButton = {
-        let button = UIButton()
+    let ascButton: SortingButton = {
+       let button = SortingButton()
         button.setTitle("가격낮은순", for: .normal)
-        button.backgroundColor = .clear
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.clipsToBounds = true
-        button.layer.cornerRadius = 10
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.white.cgColor
         return button
     }()
     
